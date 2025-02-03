@@ -16,3 +16,8 @@
 .section-paragraph{
   @apply text-secondary my-6 w-full max-w-3xl;
 }
+
+/* badgeというのはconfigの方で独自に定義 */
+.badge{
+  @apply px-4 py-2 text-sm bg-badge;
+}

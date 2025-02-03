@@ -20,7 +20,7 @@
       <div class="space-x-12 hidden md:flex items-center">
         <a href="#home" class="hover:text-selected-text transition-all duration-300">ホーム</a>
         <a href="#portfolio" class="hover:text-selected-text transition-all duration-300">ポートフォリオ</a>
-        <a href="#clients" class="hover:text-selected-text transition-all duration-300">お客様</a>
+        <a href="#skills" class="hover:text-selected-text transition-all duration-300">スキル一覧</a>
         <a href="#home"><button class="px-6 py-2 bg-theme font-bold rounded-lg hover:bg-purple-600 duration-300">お問い合わせ</button></a>
       </div>
       <div class="md:hidden">
@@ -31,7 +31,7 @@
   
   <!-- ヒーローセクション -->
   <div id="home" class="container flex justify-between items-center mx-auto">
-    <div class="container flex flex-wrap mx-10 my-24 sm:mx-20 sm:my-36 md:flex-nowrap">
+    <div class="container  mx-10 my-24 sm:mx-20 sm:my-36 md:flex-nowrap">
       <div class="flex flex-wrap justify-center max-w-full md:max-w-xl md:justify-start">
         <h1 class="font-bold text-4xl w-full text-center md:text-left md:text-6xl lg:text-7xl">
           TailwindCSSで<br>
@@ -61,6 +61,102 @@
         <img src="./images/portfolio5.jpg" alt="" class="object-cover rounded-md cursor-pointer w-full h-36 lg:h-72">
         <img src="./images/portfolio6.jpg" alt="" class="object-cover rounded-md cursor-pointer w-full h-36 lg:h-72">
       </div>
+
+    </section>
+  </div>
+
+  <!-- スキルスタック -->
+  <div id="skills" class="container flex justify-between items-center mx-auto mt-64">
+    <section class="w-full">
+      <h2 class="secondary-title">スキルスタック</h2>
+      <p class="section-paragraph">私は以下のプログラミング言語を１０年以上取り扱ってきました。</p>
+      
+      <div class="my-16">
+        <div class="w-full border border-purple-300 p-16 lg:space-x-32 lg:px-32 lg:py-20 flex flex-wrap justify-center lg:justify-start hover:border-yellow-300 transition-all duration-300 cursor-pointer">
+          <!-- 言語のロゴ -->
+          <div class="mb-6 lg:mb-0 lg:self-center">
+            <i class="fa-brands fa-js-square text-9xl text-yellow-300"></i>
+          </div>
+          <!-- スキルの説明 -->
+          <div class="justify-center lg:justify-start">
+            <h3 class="text-3xl font-semibold text-center lg:text-start">Javascript</h3>
+            <div class="flex flex-wrap justify-center w-full gap-3 mt-6 mb-8 lg:justify-start">
+              <div class="badge">Webサイト制作</div>
+              <div class="badge">フロントエンド開発</div>
+            </div>
+            <p class="text-center lg:text-start text-secondary">Javascriptエンジニア。普段はReactを使って開発現場で働いています。</p>
+          </div>
+        </div>
+
+      </div>
+      <div class="my-16">
+        <div class="w-full border border-purple-300 p-16 lg:space-x-32 lg:px-32 lg:py-20 flex flex-wrap justify-center lg:justify-start hover:border-blue-600 transition-all duration-300 cursor-pointer">
+          <!-- 言語のロゴ -->
+          <div class="mb-6 lg:mb-0 lg:self-center">
+            <i class="fa-brands fa-python text-9xl text-blue-600"></i>
+          </div>
+          <!-- スキルの説明 -->
+          <div class="justify-center lg:justify-start">
+            <h3 class="text-3xl font-semibold text-center lg:text-start">Python</h3>
+            <div class="flex flex-wrap justify-center w-full gap-3 mt-6 mb-8 lg:justify-start">
+              <div class="badge">AI/DX</div>
+              <div class="badge">データサイエンス</div>
+            </div>
+            <p class="text-center lg:text-start text-secondary">AI開発をメインに仕事を受注。企業のデータ分析も手掛けております。</p>
+          </div>
+        </div>
+
+      </div>
+      <div class="my-16">
+        <div class="w-full border border-purple-300 p-16 lg:space-x-32 lg:px-32 lg:py-20 flex flex-wrap justify-center lg:justify-start hover:border-orange-400 transition-all duration-300 cursor-pointer">
+          <!-- 言語のロゴ -->
+          <div class="mb-6 lg:mb-0 lg:self-center">
+            <i class="fa-brands fa-html5 text-9xl text-orange-400"></i>
+          </div>
+          <!-- スキルの説明 -->
+          <div class="justify-center lg:justify-start">
+            <h3 class="text-3xl font-semibold text-center lg:text-start">HTML/CSS</h3>
+            <div class="flex flex-wrap justify-center w-full gap-3 mt-6 mb-8 lg:justify-start">
+              <div class="badge">UI/UX</div>
+              <div class="badge">ホームページ制作</div>
+            </div>
+            <p class="text-center lg:text-start text-secondary">100社以上のwebサイトを制作。作れないwebサイトはありません。</p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+  </div>
+
+  <!-- お問い合わせ -->
+  <div id="contact" class="container flex justify-between items-center mx-auto mt-52 mb-20">
+    <section class="w-full">
+      <h2 class="secondary-title">お問い合わせ</h2>
+      <p class="section-paragraph">私の経歴が気になる方はご一報ください。即時対応します。</p>
+      <div class="w-full mt-16 grid lg:grid-cols-2 gap-8 lg:gap-32">
+        <div class="space-y-12">
+          <div>
+            <!-- labelはブロック要素にしないとmarginとかつかないっぽい -->
+            <label class="text-white text-xl font-bold block mb-6">お名前</label>
+            <input type="text" class="w-full p-4 border border-inputBorder bg-input">
+          </div>
+          <div>
+            <!-- labelはブロック要素にしないとmarginとかつかないっぽい -->
+            <label class="text-white text-xl font-bold block mb-6">メールアドレス</label>
+            <input type="email" class="w-full p-4 border border-inputBorder bg-input">
+          </div>
+          <div>
+            <!-- labelはブロック要素にしないとmarginとかつかないっぽい -->
+            <label class="text-white text-xl font-bold block mb-6">メッセージ</label>
+            <input type="text" class="w-full p-4 border border-inputBorder bg-input">
+          </div>
+          <button class="px-8 py-3 my-10 bg-theme font-bold rounded-lg hover:bg-purple-600 duration-300">
+            <i class="fa-solid fa-rocket mr-1"></i>
+            <span>送信する</span>
+          </button>
+        </div>
+      </div>
+      
 
     </section>
   </div>
