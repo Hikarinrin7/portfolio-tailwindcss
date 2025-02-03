@@ -134,6 +134,7 @@
       <h2 class="secondary-title">お問い合わせ</h2>
       <p class="section-paragraph">私の経歴が気になる方はご一報ください。即時対応します。</p>
       <div class="w-full mt-16 grid lg:grid-cols-2 gap-8 lg:gap-32">
+        <!-- フォーム -->
         <div class="space-y-12">
           <div>
             <!-- labelはブロック要素にしないとmarginとかつかないっぽい -->
@@ -141,12 +142,10 @@
             <input type="text" class="w-full p-4 border border-inputBorder bg-input">
           </div>
           <div>
-            <!-- labelはブロック要素にしないとmarginとかつかないっぽい -->
             <label class="text-white text-xl font-bold block mb-6">メールアドレス</label>
             <input type="email" class="w-full p-4 border border-inputBorder bg-input">
           </div>
           <div>
-            <!-- labelはブロック要素にしないとmarginとかつかないっぽい -->
             <label class="text-white text-xl font-bold block mb-6">メッセージ</label>
             <input type="text" class="w-full p-4 border border-inputBorder bg-input">
           </div>
@@ -155,9 +154,24 @@
             <span>送信する</span>
           </button>
         </div>
+        <!-- 連絡先 -->
+        <div class>
+          <p class="text-secondary">000-1111-2222</p>
+          <a href="mailto:akarinrin.work@gmail.com">akarinrin.work@gmail.com</a>
+          <!-- sns -->
+          <div class="mt-20 space-x-6">
+            <a href="#">
+              <i class="fa-brands fa-twitter text-3xl text-blue-400"></i>
+            </a>
+            <a href="#">
+              <i class="fa-brands fa-facebook text-3xl text-blue-600"></i>
+            </a>
+            <a href="#">
+              <i class="fa-brands fa-instagram text-3xl text-pink-400"></i>
+            </a>
+          </div>
+        </div>
       </div>
-      
-
     </section>
   </div>
 
