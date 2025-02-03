@@ -1,3 +1,18 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.secondary-title{
+  @apply text-3xl font-bold;
+}
+
+/* 擬似要素（タイトルの上の紫の棒） */
+.secondary-title::before{
+  content:"";
+  @apply block w-12 h-2 bg-theme rounded-full mb-5
+}
+
+/* secondaryというのはconfigの方で独自に定義した色（グレー） */
+.section-paragraph{
+  @apply text-secondary my-6 w-full max-w-3xl;
+}
